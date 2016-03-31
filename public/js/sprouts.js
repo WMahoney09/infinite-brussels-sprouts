@@ -17,3 +17,9 @@ $('.more-sprouts').on('click', function(event) {
   });
   page++
 });
+
+$(window).on('scroll', function(){
+    if( $(window).scrollTop() == $(document).height() - $(window).height() ) {
+      $(".more-sprouts").click();
+    }
+}).scroll();
