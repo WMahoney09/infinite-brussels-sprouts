@@ -1,5 +1,6 @@
 // YOUR CODE GOES HERE
 var page = 2
+$('.more-sprouts').hide();
 $('.more-sprouts').on('click', function(event) {
   event.preventDefault();
   var request = $.ajax({
